@@ -5,6 +5,8 @@ edition.workspace = true
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
+enum_dispatch = "0.3.13"
+rand = "0.10.2"
 
 # If you add the `rand` crate later: on wasm32, `getrandom` (pulled in by rand's
 # default features) fails to build without its "js" feature. Since every run is

@@ -38,7 +38,7 @@ impl WasmSimulation {
             .map_err(|e| JsValue::from(e.to_string()))
     }
 
-    pub fn ticks(&self) -> u64 {
+    pub fn ticks(&self) -> usize{
         self.inner.ticks()
     }
 }
